@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBackFlag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeCountry">
@@ -11,9 +12,10 @@
         android:layout_width="369dp"
         android:layout_height="285dp"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/tri"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="13dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tri" />
 
     <TextView
         android:id="@+id/tvnature"
@@ -52,15 +54,21 @@
         android:id="@+id/btnNext4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:text="Next4"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTree" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext4"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTree" />
 </androidx.constraintlayout.widget.ConstraintLayout>

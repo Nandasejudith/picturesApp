@@ -9,7 +9,7 @@ class Flag : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flag)
-        var btnNext2=findViewById<Button>(R.id.btnNext2)
+        var btnNext2=findViewById<Button>(R.id.btnBackPres)
         var btnNext3=findViewById<Button>(R.id.btnNext3)
 
         btnNext2.setOnClickListener {
