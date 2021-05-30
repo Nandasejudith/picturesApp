@@ -13,7 +13,7 @@ class Flag : AppCompatActivity() {
         var btnNext3=findViewById<Button>(R.id.btnNext3)
 
         btnNext2.setOnClickListener {
-            var intent=Intent(baseContext,Flag::class.java)
+            var intent=Intent(baseContext,President::class.java)
                 startActivity(intent)
         }
         btnNext3.setOnClickListener {
